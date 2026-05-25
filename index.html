@@ -46,12 +46,9 @@
               <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
 
-              <li class="has-children">
+              <li>
                 <a href="properties.html">Properties</a>
-                <ul class="dropdown">
-                  <li><a href="#">Buy Property</a></li>
-                  <li><a href="#">Sell Property</a></li>
-                </ul>
+                
               </li>
               <li><a href="services.html">Services</a></li>
               <li><a href="contact.html">Contact Us</a></li>
@@ -92,19 +89,32 @@
             <h1 class="heading" data-aos="fade-up">
               Easiest way to find your dream home
             </h1>
-            <form
-              action="#"
-              class="narrow-w form-search d-flex align-items-stretch mb-3"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <input
-                type="text"
-                class="form-control px-4"
-                placeholder="Your ZIP code or City. e.g. New York"
-              />
-              <button type="submit" class="btn btn-primary">Search</button>
-            </form>
+<form
+  action="#"
+  class="narrow-w form-search d-flex align-items-stretch mb-3"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
+  <!-- Search Input -->
+  <input
+    type="text"
+    class="form-control px-4 rounded-0"
+    placeholder="Your ZIP code or City. e.g. New York"
+  />
+
+  <!-- Filter -->
+  <select class="form-select rounded-0 border-start-0 border-end-0 px-3">
+    <option value="">All Types</option>
+    <option value="house">House</option>
+    <option value="apartment">Apartment</option>
+    <option value="villa">Villa</option>
+  </select>
+
+  <!-- Button -->
+  <button type="submit" class="btn btn-primary px-4 rounded-0">
+    Search
+  </button>
+</form>
           </div>
         </div>
       </div>
@@ -121,7 +131,7 @@
           <div class="col-lg-6 text-lg-end">
             <p>
               <a
-                href="#"
+                href="properties.html"
                 target="_blank"
                 class="btn btn-primary text-white py-3 px-4"
                 >View all properties</a
