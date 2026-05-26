@@ -123,3 +123,26 @@
 
 
 })()
+function sendMessage() {
+    let name = document.querySelector("input[placeholder='Your Name']").value.trim();
+    let email = document.querySelector("input[placeholder='Your Email']").value.trim();
+    let subject = document.querySelector("input[placeholder='Subject']").value.trim();
+    let message = document.querySelector("textarea").value.trim();
+
+    // ❌ empty check
+    if (!name || !email || !subject || !message) {
+        alert("Please fill all fields ❌");
+        return;
+    }
+
+    // ❌ email validation
+    if (!email.includes("@")) {
+        alert("Please enter valid email ❌");
+        return;
+    }
+
+    alert("Message submitted successfully ✅");
+
+    // optional clear form
+    document.querySelector("form").reset();
+}

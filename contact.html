@@ -146,7 +146,7 @@
             </div>
           </div>
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <form action="#">
+              <form id="contactForm">
               <div class="row">
                 <div class="col-6 mb-3">
                   <input
@@ -156,6 +156,7 @@
                   />
                 </div>
                 <div class="col-6 mb-3">
+                  
                   <input
                     type="email"
                     class="form-control"
@@ -181,11 +182,9 @@
                 </div>
 
                 <div class="col-12">
-                  <input
-                    type="submit"
-                    value="Send Message"
-                    class="btn btn-primary"
-                  />
+                  <button type="button" class="btn btn-primary" onclick="sendMessage()">
+  Send Message
+</button>
                 </div>
               </div>
             </form>
@@ -308,11 +307,11 @@
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
+    <script src="js/navbar.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/aos.js"></script>
-    <script src="js/navbar.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
   </body>
